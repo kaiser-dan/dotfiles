@@ -1,4 +1,10 @@
 # Most recently edited files in Vim (version 3.0)
+/home/kaiserd/dotfiles/bash/.bash_functions
+/home/kaiserd/research/projects/MultiplexReconstruction/Embedded/proj_naive-embedded-reconstruction/src/embmplxrec/features/formatters.py
+/home/kaiserd/research/projects/MultiplexReconstruction/Embedded/proj_naive-embedded-reconstruction/pyproject.toml
+/home/kaiserd/research/projects/MultiplexReconstruction/MultilinkMotif/proj_multilink-motifs/tests/nullmodel/test_nullmodel_randomization.py
+/home/kaiserd/research/projects/MultiplexReconstruction/MultilinkMotif/proj_multilink-motifs/tests/measurements/test_measure_multilink_frequency.py
+/home/kaiserd/.config/starship.toml
 /home/kaiserd/dotfiles/.gitignore
 /home/kaiserd/dotfiles/.git/config
 /home/kaiserd/.lesshst
@@ -11,7 +17,6 @@
 /home/kaiserd/Science/research/projects/MultiplexReconstruction/Embedded/proj_naive-embedded-reconstruction/pyproject.toml
 /home/kaiserd/Science/research/projects/MultiplexReconstruction/Embedded/proj_naive-embedded-reconstruction/requirements.txt
 /home/kaiserd/Science/research/projects/MultiplexReconstruction/Embedded/proj_naive-embedded-reconstruction/README.md
-/home/kaiserd/.config/starship.toml
 /home/kaiserd/Science/research/projects/MultiplexReconstruction/Embedded/proj_naive-embedded-reconstruction/setup.sh
 /home/kaiserd/Science/research/projects/MultiplexReconstruction/Embedded/proj_naive-embedded-reconstruction/.snakemake/log/2023-08-06T173706.778901.snakemake.log
 /home/kaiserd/Science/research/projects/MultiplexReconstruction/Embedded/proj_naive-embedded-reconstruction/workflow/Snakefile
