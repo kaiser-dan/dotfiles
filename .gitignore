@@ -1,0 +1,13 @@
+# Package managers
+cargo/
+rustup/
+julia/
+
+# Repositories
+# fancy-git/
+# vim/.vim_runtime
+
+# Sensitive files
+ssh/.ssh/keys/
+ssh/.ssh/known_hosts
+ssh/.ssh/authorized_keys

@@ -1,0 +1,13 @@
+[user]
+	name = Daniel Kaiser
+	email = dkaiser4897@gmail.com
+[color]
+	ui = true
+[color "diff"]
+	meta = yellow
+	old = red
+	new = green
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = cyan
