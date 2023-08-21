@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 ###################
 #     Headers     #
 ###################
@@ -11,15 +12,22 @@
 ###################
 # Default utility #
 ###################
+alias syncclock='sudo hwclock -s'  # sync WSL clock with Windows
+
+alias hello=". ~/.hello"  # startup common utils
 alias du='du -hs'
+alias sshinit='. ~/.ssh/ssh_init'  # activate agent, add github key
+alias envact='source .venv/bin/activate'  # activate python venv
+alias scrls='screen -ls'  # list screens - can take additional patterns to match on
 
 ####################
 # Installed utiliy #
 ####################
 alias bat='batcat'  # improved `cat`
 alias dustd='dust -D'  # improved `du`
-alias lsd='lsd -1 --group-directories-first'  # improved `ls`
-alias strshp='starship explain'
+alias lsd='lsd -1 -l --color always --permission octal --group-directories-first'  # improved `ls`
+alias prompt='starship explain'
+alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 
 ######################
 # Symlink navigation #

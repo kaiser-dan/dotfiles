@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# Source utility
+source ~/.bash_aliases
+source ~/.bash_functions
+
+clear
+echo "**************** Startup *******************"
+echo "----- SSH -----"
+sshinit
+echo
+echo "----- Status -----"
+seeremotes
+echo
+echo "----- System -----"
+neofetch
+echo
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo "~ $(date) ~"
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+
