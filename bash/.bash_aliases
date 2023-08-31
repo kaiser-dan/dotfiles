@@ -58,7 +58,7 @@ then
 fi
 
 # --- Personal machines ---
-if ["$(uname -n)" == "PICARD" || "$(uname -n)" == "JANEWAY" || "$(uname -n)" == "KIRK"]
+if [ "$(uname -n)" == "PICARD" ] || [ "$(uname -n)" == "JANEWAY" ] || [ "$(uname -n)" == "KIRK" ]
 then
     alias tmux='tmux -f ~/.config/tmux/tmux.conf'
     alias syncclock='sudo hwclock -s'  # sync WSL clock with Windows
