@@ -26,6 +26,7 @@ alias scrls='screen -ls'  # list screens - can take additional patterns to match
 alias bat='batcat'  # improved `cat`
 alias dustd='dust -D'  # improved `du`
 alias lsd='lsd -1 -l --color always --permission octal --group-directories-first'  # improved `ls`
+alias lsdd='lsd -A --total-size'  # improved `ls`
 alias prompt='starship explain'
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 

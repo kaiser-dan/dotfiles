@@ -78,7 +78,7 @@ LS_COLORS=$LSCOLORS:'*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=0
 
 # Data
 ## Generics
-LS_COLORS=$LS_COLORS:'*.dat=01;33:*.pkl=01;32'
+LS_COLORS=$LS_COLORS:'*.dat=01;33:*.pkl=01;32:*.txt=01;33:*.csv=01;32'
 
 ## Archives
 LS_COLORS=$LS_COLORS:'*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31'
@@ -91,7 +91,7 @@ LS_COLORS=$LS_COLORS:'*.md=01;36:*.rst=01;36'
 
 # Config
 LS_COLORS=$LS_COLORS:'*.cfg=01;90:*.config=01;90:*.yaml=01;90:*.yml=01;90:*.toml=01;90:*requirements.txt=01;90'
-LS_COLORS=$LS_COLORS:'*makefile=01;35:*Makefile=01;35:*Snakefile=01;35:*snakefile=01;35'
+LS_COLORS=$LS_COLORS:'*makefile=01;35:*Makefile=01;35:*Snakefile=01;35:*snakefile=01;35:*.smk=01;35'
 
 # Repo specialty
 LS_COLORS=$LS_COLORS:'*LICENSE=04;33:*CITATION.cff=04;33'
