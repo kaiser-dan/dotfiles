@@ -61,7 +61,7 @@ fi
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+    alias ls='ls --color=auto --group-directories-first'
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
 fi
@@ -101,9 +101,9 @@ export LS_COLORS
 # --- grep ---
 if [ -x /usr/bin/dircolors ]
 then
-	alias grep='grep --color=auto'
-	alias fgrep='fgrep --color=auto'
-	alias egrep='egrep --color=auto'
+	alias grep='grep --color=always'
+	alias fgrep='fgrep --color=always'
+	alias egrep='egrep --color=always'
 fi
 
 
@@ -136,7 +136,7 @@ fi
 # Default PS, overwritten by starship if available!
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-    export PS1="\[\033[90m\]{\t \d} \[\033[32m\]\u \[\033[37m\]:: \[\033[36m\]\W \[\033[33m\][\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')] \[\033[35m\]->\[$(tput sgr0)\] "
+    export PS1="\[\033[90m\]{\t} \[\033[32m\]\u\[\033[31m\]@\[\033[34m\]\h \[\033[37m\]:: \[\033[36m\]\W \[\033[33m\][\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')] \[\033[35m\]->\[$(tput sgr0)\] "
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -228,3 +228,5 @@ fi
 if [ -f ~/.bash_functions ]; then
 	. ~/.bash_functions
 fi
+
+. ~/.fancy-git/prompt.sh
