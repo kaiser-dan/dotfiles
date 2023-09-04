@@ -3,9 +3,9 @@ cargo/
 rustup/
 julia/
 
-# Repositories
-# fancy-git/
-# vim/.vim_runtime
+# Recent logs
+vim/.vim_mru_files
+vim/.viminfo
 
 # Sensitive files
 ssh/.ssh/keys/
