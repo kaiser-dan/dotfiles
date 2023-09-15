@@ -16,16 +16,17 @@
 ###################
 alias du='du -hs'
 alias scrls='screen -ls'  # list screens - can take additional patterns to match on
+alias tls='tmux ls'  # list tmux
 
 ####################
 # Installed utility #
 ####################
-alias bat='batcat'  # improved `cat`
 alias dustd='dust -D'  # improved `du`
 alias lsd='lsd -1 -l --color always --permission octal --group-directories-first'  # improved `ls`
 alias lsdd='lsd -A --total-size'  # improved `ls`
 alias prompt='starship explain'
-
+alias zlj='zellij'  # terminal multiplexer
+alias lynxp='lynx -stdin'  # web browser
 
 ##################
 # Custom utility #
@@ -54,13 +55,13 @@ alias envact='source .venv/bin/activate'  # activate python venv
 # --- Uni machines ---
 if [ "$(uname -n)" == "sagres" ]
 then
-    alias python='~/Software/LanguageBinaries/Python-3.10.13/python'
     alias tmux='~/Software/AppImages/tmux.appimage -f ~/.config/tmux/tmux.conf'
 fi
 
 # --- Personal machines ---
 if [ "$(uname -n)" == "PICARD" ] || [ "$(uname -n)" == "JANEWAY" ] || [ "$(uname -n)" == "KIRK" ]
 then
+    alias cat='batcat'  # improved `cat`
     alias tmux='tmux -f ~/.config/tmux/tmux.conf'
     alias syncclock='sudo hwclock -s'  # sync WSL clock with Windows
 fi

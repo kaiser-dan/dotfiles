@@ -5,7 +5,7 @@
 ###############################
 #           Headers           #
 ###############################
-# Make use of your editors search functionality
+# Make use of your editor's search functionality
 
 # History
 # Window sizing
@@ -229,3 +229,9 @@ if [ -f ~/.bash_functions ]; then
 	. ~/.bash_functions
 fi
 
+# --- Default programs ---
+# --- XDG open ---
+alias open='xdg-open'
+
+# Default editor
+export EDITOR="nvim"
