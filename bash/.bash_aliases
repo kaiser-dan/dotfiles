@@ -56,6 +56,7 @@ alias envact='source .venv/bin/activate'  # activate python venv
 if [ "$(uname -n)" == "sagres" ]
 then
     alias tmux='~/Software/AppImages/tmux.appimage -f ~/.config/tmux/tmux.conf'
+    alias nvim='~/Software/AppImages/nvim.appimage'
 fi
 
 # --- Personal machines ---
