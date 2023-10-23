@@ -79,7 +79,7 @@ progreSh() {
 seeremotes () {
     # Check running screens
     echo "Checking running screens..."
-    HOSTS=("lab_luddy_iu" "kj_luddy_iu" "gh_luddy_iu")
+    HOSTS=("kj_luddy_iu" "gh_luddy_iu")
     for HOST in ${HOSTS[@]}
     do
         check_screen $HOST
@@ -87,7 +87,7 @@ seeremotes () {
 
     # Check usage
     echo "Checking disk usage..."
-    HOSTS=("lab_luddy_iu" "quartz_iu")
+    HOSTS=("quartz_iu")
     for HOST in ${HOSTS[@]}
     do
         check_quota $HOST

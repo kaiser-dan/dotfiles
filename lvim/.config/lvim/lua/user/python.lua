@@ -14,7 +14,7 @@ lvim.builtin.treesitter.ensure_installed = {
 
 -- setup formatting
 local formatters = require "lvim.lsp.null-ls.formatters"
-formatters.setup { { name = "black" }, }
+formatters.setup { { name = "black" }, { name = "autoflake" }, { name = "autopep8" }}
 lvim.format_on_save.enabled = true
 lvim.format_on_save.pattern = { "*.py" }
 

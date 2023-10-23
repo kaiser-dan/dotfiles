@@ -22,8 +22,8 @@ alias tls='tmux ls'  # list tmux
 # Installed utility #
 ####################
 alias dustd='dust -D'  # improved `du`
-alias lsd='lsd -1 -l --color always --permission octal --group-directories-first'  # improved `ls`
-alias lsdd='lsd -A --total-size'  # improved `ls`
+alias lsd='lsd -1 --color always --group-directories-first'  # improved `ls`
+alias lsdd='lsd -l --permission octal -A --total-size'  # improved `ls`
 alias prompt='starship explain'
 alias zlj='zellij'  # terminal multiplexer
 alias lynxp='lynx -stdin'  # web browser
@@ -62,7 +62,7 @@ fi
 # --- Personal machines ---
 if [ "$(uname -n)" == "PICARD" ] || [ "$(uname -n)" == "JANEWAY" ] || [ "$(uname -n)" == "KIRK" ]
 then
-    alias cat='batcat'  # improved `cat`
+    alias cat='bat'  # improved `cat`
     alias tmux='tmux -f ~/.config/tmux/tmux.conf'
     alias syncclock='sudo hwclock -s'  # sync WSL clock with Windows
 fi

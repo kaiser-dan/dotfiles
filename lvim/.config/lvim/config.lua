@@ -12,4 +12,4 @@ require("user/python")
 require("user/rust")
 
 -- Markups
-require("user/latex")
+-- require("user/latex")
