@@ -21,12 +21,26 @@ alias tls='tmux ls'  # list tmux
 ####################
 # Installed utility #
 ####################
+# System tools
 alias dustd='dust -D'  # improved `du`
+alias erd='erd -IH'  # colorized tree with human-readable size and icons
+alias lg='lazygit'  # nice Git UI
+
+# Navigation/prompt
 alias lsd='lsd -1 --color always --group-directories-first'  # improved `ls`
 alias lsdd='lsd -l --permission octal -A --total-size'  # improved `ls`
 alias prompt='starship explain'
+
+# Terminal multiplexers
 alias zlj='zellij'  # terminal multiplexer
+
+# Editors
+alias nv='nvim'
+alias lv='lvim'
+
+# Other
 alias lynxp='lynx -stdin'  # web browser
+alias btb='bartib'
 
 ##################
 # Custom utility #

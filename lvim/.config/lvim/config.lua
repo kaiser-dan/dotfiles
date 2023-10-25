@@ -3,13 +3,26 @@
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
--- General settings
+-- Extend plugins
+require("user/plugins")
+
+-- Set global options
 require("user/options")
 
--- Language-specific setups
--- Code
-require("user/python")
-require("user/rust")
+-- Create custom global bindings
+require("user/keymaps")
 
--- Markups
--- require("user/latex")
+-- Specify language servers
+require("user/lsp")
+
+-- Specify debug adapters
+require("user/dap")
+
+-- Core plugin overloading
+require("user/treesitter")
+
+-- User plugins
+
+-- *Aesthetics*
+require("user/colors")
+
