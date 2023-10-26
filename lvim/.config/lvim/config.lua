@@ -22,6 +22,7 @@ require("user/dap")
 require("user/treesitter")
 
 -- User plugins
+require("user/symbols-outline")
 
 -- *Aesthetics*
 require("user/colors")

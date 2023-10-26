@@ -1,6 +1,7 @@
 lvim.plugins = {
   -- ??
   "stevearc/dressing.nvim",
+  "simrat39/symbols-outline.nvim",
   -- Git
   "kdheepak/lazygit.nvim",
   -- DAPs and Testing
