@@ -2,6 +2,7 @@
 cargo/
 rustup/
 julia/
+lazy-lock.json
 
 # Recent logs
 vim/.vim_mru_files
