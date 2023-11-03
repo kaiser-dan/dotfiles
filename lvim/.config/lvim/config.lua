@@ -23,6 +23,8 @@ require("user/treesitter")
 
 -- User plugins
 require("user/symbols-outline")
+require("user/todo-comments")
+require("user/octo")
 
 -- *Aesthetics*
 require("user/colors")
