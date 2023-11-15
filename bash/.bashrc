@@ -205,3 +205,18 @@ alias open='xdg-open'
 
 # Default editor
 export EDITOR="nvim"
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/home/kaiserd/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/home/kaiserd/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<
