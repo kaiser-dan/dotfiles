@@ -1,3 +1,8 @@
+-- Local leader
+local opts = { noremap = true, silent = true }
+local keymap = vim.api.nvim_set_keymap
+-- keymap("n", ",", )
+
 -- Navigation extras
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap

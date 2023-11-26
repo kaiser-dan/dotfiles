@@ -1,4 +1,10 @@
 lvim.plugins = {
+  -- Notes 
+  {
+    "nvim-neorg/neorg",
+    dependencies = { "nvim-lua/plenary.nvim" }
+  },
+  "folke/todo-comments.nvim",
   -- ??
   "stevearc/dressing.nvim",
   "simrat39/symbols-outline.nvim",
@@ -10,10 +16,6 @@ lvim.plugins = {
   {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" }
-  },
-  {
-    "folke/todo-comments.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" }
   },
   -- Python
   "ChristianChiarulli/swenv.nvim",
