@@ -1,8 +1,3 @@
--- Local leader
-local opts = { noremap = true, silent = true }
-local keymap = vim.api.nvim_set_keymap
--- keymap("n", ",", )
-
 -- Navigation extras
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
@@ -28,3 +23,10 @@ lvim.builtin.which_key.mappings["t"] = {
 
 -- Symbols outline
 lvim.builtin.which_key.mappings["o"] = { "<cmd>SymbolsOutline<CR>" , "Symbols outline" }
+
+-- Neorg
+lvim.builtin.which_key.mappings["n"] = {
+    name = "Neorg",
+    ["q"] = { "<cmd>Neorg workspace quicknotes<CR>", "Quicknotes index"},
+    ["n"] = { "<LocalLeader>nn<CR>", "New note" },
+}
