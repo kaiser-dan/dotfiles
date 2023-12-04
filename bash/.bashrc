@@ -211,11 +211,11 @@ export EDITOR="nvim"
 # !! Contents within this block are managed by juliaup !!
 
 case ":$PATH:" in
-    *:/home/kaiserd/.juliaup/bin:*)
+    *:/home/daniel/.juliaup/bin:*)
         ;;
 
     *)
-        export PATH=/home/kaiserd/.juliaup/bin${PATH:+:${PATH}}
+        export PATH=/home/daniel/.juliaup/bin${PATH:+:${PATH}}
         ;;
 esac
 
