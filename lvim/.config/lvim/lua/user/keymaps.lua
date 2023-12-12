@@ -4,6 +4,7 @@ local keymap = vim.api.nvim_set_keymap
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprev<CR>", opts)
 
+lvim.builtin.which_key.mappings["R"] = { "<cmd>RnvimrToggle<CR>", "Ranger VFE" }
 
 -- Python file bindings
 lvim.builtin.which_key.mappings["C"] = {
