@@ -81,3 +81,9 @@ then
     alias tmux='tmux -f ~/.config/tmux/tmux.conf'
     alias syncclock='sudo hwclock -s'  # sync WSL clock with Windows
 fi
+
+
+if [ "$(uname -n)" == "JANEWAY" ]
+then
+    alias cat='batcat'
+fi
