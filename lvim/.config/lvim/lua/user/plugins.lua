@@ -25,7 +25,8 @@ lvim.plugins = {
   "kevinhwang91/rnvimr",
   -- Aesthetics
   "askfiy/visual_studio_code",
-  -- "saine/everforest",
-  -- "morhertz/gruvbox",
+  "sainnhe/everforest",
+  "sainnhe/sonokai",
+  "sainnhe/gruvbox-material",
 }
 
