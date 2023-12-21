@@ -30,3 +30,4 @@ require("user/neorg")
 -- *Aesthetics*
 require("user/colors")
 
+vim.cmd([[set conceallevel=2]])

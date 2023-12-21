@@ -5,4 +5,5 @@ require("visual_studio_code").setup({
     end,
 })
 
-lvim.colorscheme = "visual_studio_code"
+-- lvim.colorscheme = "visual_studio_code"
+lvim.colorscheme = "sonokai"

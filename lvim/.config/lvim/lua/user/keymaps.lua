@@ -28,6 +28,9 @@ lvim.builtin.which_key.mappings["o"] = { "<cmd>SymbolsOutline<CR>" , "Symbols ou
 -- Neorg
 lvim.builtin.which_key.mappings["n"] = {
     name = "Neorg",
-    ["q"] = { "<cmd>Neorg workspace quicknotes<CR>", "Quicknotes index"},
+    ["c"] = {"<cmd>Neorg toggle-concealer<CR>", "Toggle concealment"},
+    ["e"] = {"<cmd>Neorg toc<CR>", "Open table of contents"},
+    ["j"] = {"<cmd>Neorg journal today<CR>", "Today's journal entry"},
     ["n"] = { "<LocalLeader>nn<CR>", "New note" },
+    ["q"] = { "<cmd>Neorg workspace quicknotes<CR>", "Quicknotes index"},
 }
