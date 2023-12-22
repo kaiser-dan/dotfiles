@@ -8,6 +8,7 @@ lvim.plugins = {
   -- ??
   "stevearc/dressing.nvim",
   "simrat39/symbols-outline.nvim",
+  "gaborvecsei/usage-tracker.nvim",
   -- Git
   "kdheepak/lazygit.nvim",
   "pwntester/octo.nvim",

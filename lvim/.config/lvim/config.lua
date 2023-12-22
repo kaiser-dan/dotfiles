@@ -26,6 +26,7 @@ require("user/symbols-outline")
 require("user/todo-comments")
 require("user/octo")
 require("user/neorg")
+require("user/usage")
 
 -- *Aesthetics*
 require("user/colors")

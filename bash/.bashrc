@@ -157,6 +157,9 @@ if [ -f ~/.config/starship.toml ]; then
 	eval "$(starship init bash)"
 fi
 
+# --- Zoxide initialize ---
+eval "$(zoxide init bash)"
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 ####################
 # Package managers #
@@ -220,3 +223,4 @@ case ":$PATH:" in
 esac
 
 # <<< juliaup initialize <<<
+

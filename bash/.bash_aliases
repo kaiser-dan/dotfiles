@@ -80,6 +80,7 @@ then
     alias cat='bat'  # improved `cat`
     alias tmux='tmux -f ~/.config/tmux/tmux.conf'
     alias syncclock='sudo hwclock -s'  # sync WSL clock with Windows
+    alias cd='z'  # zoxide fuzzy navigator
 fi
 
 

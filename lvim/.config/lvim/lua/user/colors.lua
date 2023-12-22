@@ -4,6 +4,3 @@ require("visual_studio_code").setup({
         vim.cmd([[colorscheme visual_studio_code]])
     end,
 })
-
--- lvim.colorscheme = "visual_studio_code"
-lvim.colorscheme = "sonokai"
