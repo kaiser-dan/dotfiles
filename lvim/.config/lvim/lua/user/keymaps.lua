@@ -1,9 +1,11 @@
--- Navigation extras
+-- Navigation 
+---- Shift-key buffer navigation
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprev<CR>", opts)
 
+---- Ranger
 lvim.builtin.which_key.mappings["R"] = { "<cmd>RnvimrToggle<CR>", "Ranger VFE" }
 
 -- Python file bindings
@@ -35,3 +37,6 @@ lvim.builtin.which_key.mappings["n"] = {
     ["q"] = {"<cmd>Neorg workspace quicknotes<CR>", "Quicknotes index"},
     ["r"] = {"<cmd>Neorg workspace research<CR>", "Research notes index"}
 }
+
+-- Fine Cmdline
+vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})

@@ -5,10 +5,7 @@ lvim.plugins = {
     dependencies = { "nvim-lua/plenary.nvim" }
   },
   "folke/todo-comments.nvim",
-  -- ??
-  "stevearc/dressing.nvim",
   "simrat39/symbols-outline.nvim",
-  "gaborvecsei/usage-tracker.nvim",
   -- Git
   "kdheepak/lazygit.nvim",
   "pwntester/octo.nvim",
@@ -24,10 +21,22 @@ lvim.plugins = {
   "nvim-neotest/neotest-python",
   -- Navigation
   "kevinhwang91/rnvimr",
+   {
+       "ThePrimeagen/harpoon",
+       branch = "harpoon2"
+   },
   -- Aesthetics
   "askfiy/visual_studio_code",
   "sainnhe/everforest",
   "sainnhe/sonokai",
   "sainnhe/gruvbox-material",
+  -- Miscellaneous productivity 
+  "gaborvecsei/usage-tracker.nvim",
+  {
+    'VonHeikemen/fine-cmdline.nvim',
+    dependencies = { "MunifTanjim/nui.nvim" }
+  },
+  -- Unknown
+  "stevearc/dressing.nvim",
 }
 

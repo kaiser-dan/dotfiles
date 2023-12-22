@@ -11,6 +11,7 @@ require("user/options")
 
 -- Create custom global bindings
 require("user/keymaps")
+require("user/harpoon")
 
 -- Specify language servers
 require("user/lsp")
