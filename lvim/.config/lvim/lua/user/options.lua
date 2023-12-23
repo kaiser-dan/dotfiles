@@ -11,8 +11,8 @@ vim.opt.relativenumber = true -- relative line numbers
 vim.opt.wrap = false -- wrap lines
 
 -- Folding
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+-- vim.opt.foldmethod = "expr"
+-- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 -- Aesthetics
 vim.opt.termguicolors = true -- enable 24-bit colors

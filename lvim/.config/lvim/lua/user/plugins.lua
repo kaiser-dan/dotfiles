@@ -25,6 +25,7 @@ lvim.plugins = {
        "ThePrimeagen/harpoon",
        branch = "harpoon2"
    },
+  "chentoast/marks.nvim",
   -- Aesthetics
   "askfiy/visual_studio_code",
   "sainnhe/everforest",
@@ -35,6 +36,16 @@ lvim.plugins = {
   {
     'VonHeikemen/fine-cmdline.nvim',
     dependencies = { "MunifTanjim/nui.nvim" }
+  },
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+        require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use defaults
+        })
+    end
   },
   -- Unknown
   "stevearc/dressing.nvim",

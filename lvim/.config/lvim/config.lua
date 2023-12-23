@@ -11,7 +11,7 @@ require("user/options")
 
 -- Create custom global bindings
 require("user/keymaps")
-require("user/harpoon")
+-- require("user/harpoon")
 
 -- Specify language servers
 require("user/lsp")
@@ -28,6 +28,7 @@ require("user/todo-comments")
 require("user/octo")
 require("user/neorg")
 require("user/usage")
+require("user/marks")
 
 -- *Aesthetics*
 require("user/colors")
