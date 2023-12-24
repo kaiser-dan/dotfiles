@@ -39,4 +39,4 @@ lvim.builtin.which_key.mappings["n"] = {
 }
 
 -- Fine Cmdline
-vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
+-- vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})

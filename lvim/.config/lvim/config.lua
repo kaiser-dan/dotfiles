@@ -23,12 +23,13 @@ require("user/dap")
 require("user/treesitter")
 
 -- User plugins
+require("user/marks")
+require("user/neorg")
+require("user/noice")
+require("user/octo")
 require("user/symbols-outline")
 require("user/todo-comments")
-require("user/octo")
-require("user/neorg")
 require("user/usage")
-require("user/marks")
 
 -- *Aesthetics*
 require("user/colors")
