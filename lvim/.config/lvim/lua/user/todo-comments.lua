@@ -13,10 +13,10 @@ require("todo-comments").setup(
         TODO = { icon = " ", color = "info" },
         HACK = { icon = " ", color = "warning" },
         WARN = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },
-        PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
-        NOTE = { icon = " ", color = "hint", alt = { "INFO" } },
+        PERF = { icon = "󰳗", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
+        NOTE = { icon = "", color = "hint", alt = { "INFO" } },
         TEST = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED" } },
-        DOC = { icon = "  ", color = "#6aa84f", alt = { "DOCS" } },
+        DOC = { icon = " ", color = "#6aa84f", alt = { "DOCS" } },
       },
       gui_style = {
         fg = "NONE", -- The gui style to use for the fg highlight group.

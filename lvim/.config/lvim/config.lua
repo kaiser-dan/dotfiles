@@ -11,13 +11,13 @@ require("user/options")
 
 -- Create custom global bindings
 require("user/keymaps")
--- require("user/harpoon")
 
 -- Specify language servers
 require("user/lsp")
 
 -- Specify debug adapters
 require("user/dap")
+require("user/neotest")
 
 -- Core plugin overloading
 require("user/treesitter")
