@@ -16,5 +16,5 @@ vim.opt.wrap = false -- wrap lines
 
 -- Aesthetics
 vim.opt.termguicolors = true -- enable 24-bit colors
-lvim.colorscheme = "sonokai"
+lvim.colorscheme = "zephyr"
 vim.notify = require("notify")
