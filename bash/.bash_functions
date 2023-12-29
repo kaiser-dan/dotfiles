@@ -5,6 +5,7 @@
 
 # Archiving and compression
 # Statuses and quotas
+# Miscellaneous (check once in a while for relevance)
 
 # =============================================
 #############################
@@ -117,4 +118,12 @@ check_quota () {
         echo "$1"
         echo "$(ssh -q $1 -t 'quota -s -u kaiserd')"
     fi
+}
+
+
+#############################
+#       Miscellaneous       #
+#############################
+pluto() {
+    julia -e 'using Pluto; Pluto.run()'
 }
