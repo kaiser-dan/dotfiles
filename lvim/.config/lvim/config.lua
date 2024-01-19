@@ -19,8 +19,9 @@ require("user/lsp")
 require("user/dap")
 require("user/neotest")
 
--- Core plugin overloading
+-- Core plugin extending/overloading
 require("user/treesitter")
+-- require("user/bufferline")
 
 -- User plugins
 require("user/marks")
