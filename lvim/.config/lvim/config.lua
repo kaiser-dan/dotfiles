@@ -7,6 +7,7 @@
 require("user/plugins")
 
 -- Set global options
+require("user/notify")
 require("user/options")
 
 -- Create custom global bindings
