@@ -8,7 +8,7 @@ lvim.plugins = {
     "simrat39/symbols-outline.nvim",
     -- Git
     "kdheepak/lazygit.nvim",
-    "pwntester/octo.nvim",
+    -- "pwntester/octo.nvim",
     -- DAPs and Testing
     "nvim-neotest/neotest",
     {
@@ -28,6 +28,7 @@ lvim.plugins = {
     "chentoast/marks.nvim",
     -- Aesthetics
     "askfiy/visual_studio_code",
+    "ellisonleao/gruvbox.nvim",
     "fenetikm/falcon",
     "folke/tokyonight.nvim",
     "glepnir/zephyr-nvim",

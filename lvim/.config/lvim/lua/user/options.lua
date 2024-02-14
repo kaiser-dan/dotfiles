@@ -14,6 +14,9 @@ vim.opt.wrap = false -- wrap lines
 -- vim.opt.foldmethod = "expr"
 -- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
+-- Scrolling
+vim.opt.scrolloff = 2
+
 -- Aesthetics
 vim.opt.termguicolors = true -- enable 24-bit colors
 lvim.colorscheme = "zephyr"

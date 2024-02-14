@@ -3,7 +3,7 @@ layout {
       plugin location="zellij:tab-bar"
     }
   pane split_direction="vertical" {
-    pane edit="main.jl" 
+    pane edit="README.md" 
     pane split_direction="horizontal" {
       pane command="julia"
       pane {

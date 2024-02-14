@@ -37,3 +37,9 @@ lvim.builtin.which_key.mappings["n"] = {
     ["q"] = {"<cmd>Neorg workspace quicknotes<CR>", "Quicknotes index"},
     ["r"] = {"<cmd>Neorg workspace research<CR>", "Research notes index"}
 }
+
+-- Marks
+lvim.builtin.which_key.mappings["m"] = { "<cmd>MarksQFListAll<CR>" , "List marks" }
+
+-- Noice
+lvim.builtin.which_key.mappings[','] = { "<cmd>NoiceDismiss<CR>", "Dismiss notifications" }
