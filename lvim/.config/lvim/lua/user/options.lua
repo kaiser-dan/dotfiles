@@ -19,5 +19,5 @@ vim.opt.scrolloff = 2
 
 -- Aesthetics
 vim.opt.termguicolors = true -- enable 24-bit colors
-lvim.colorscheme = "zephyr"
+lvim.colorscheme = "gruvbox"
 vim.notify = require("notify")
