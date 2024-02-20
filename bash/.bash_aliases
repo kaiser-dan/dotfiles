@@ -22,7 +22,8 @@ alias tls='tmux ls'  # list tmux
 # Installed utility #
 ####################
 # System tools
-alias dustd='dust -D'  # improved `du`
+alias dust='dust -i'  # improved 'du'; automatically ignore hidden files
+alias dustd='dust -D'  # dust; only show directories
 alias erd='erd -IH'  # colorized tree with human-readable size and icons
 alias erdd='erd --dirs-only'  # prettier alternative to `tree`
 alias lg='lazygit'  # nice Git UI
