@@ -43,3 +43,6 @@ lvim.builtin.which_key.mappings["m"] = { "<cmd>MarksQFListAll<CR>" , "List marks
 
 -- Noice
 lvim.builtin.which_key.mappings[','] = { "<cmd>NoiceDismiss<CR>", "Dismiss notifications" }
+
+-- ToggleTerm
+-- lvim.builtin.which_key.mappings['\\'] = { "<cmd>ToggleTerm<CR>", "Terminal (toggle)" }
