@@ -127,3 +127,7 @@ check_quota () {
 pluto() {
     julia -e 'using Pluto; Pluto.run()'
 }
+
+headers() {
+    head -n1 $1 | tr ',' '\n' | cat
+}

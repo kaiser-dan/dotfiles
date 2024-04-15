@@ -27,6 +27,7 @@ alias dustd='dust -D'  # dust; only show directories
 alias erd='erd -IH'  # colorized tree with human-readable size and icons
 alias erdd='erd --dirs-only'  # prettier alternative to `tree`
 alias lg='lazygit'  # nice Git UI
+alias rgi='rg -i'  # ripgrep, ignore case
 
 # Navigation/prompt
 alias lsd='lsd -1 --color always --group-directories-first'  # improved `ls`
@@ -49,6 +50,9 @@ alias btb='bartib'
 ##################
 alias hello=". ~/.hello"  # init github key, check remotes, check quotas, neofetch
 alias sshinit='. ~/.ssh/ssh_init'  # activate agent, add github key
+alias syncnotes_up='rsync -zaP ~/notes/ kj_luddy_iu:~/notes/'
+alias syncnotes_down='rsync -zaP kj_luddy_iu:~/notes/ ~/notes/'
+# alias syncnotes=''
 
 ######################
 # Symlink navigation #

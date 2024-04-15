@@ -33,9 +33,10 @@ lvim.builtin.which_key.mappings["n"] = {
     ["c"] = {"<cmd>Neorg toggle-concealer<CR>", "Toggle concealment"},
     ["e"] = {"<cmd>Neorg toc<CR>", "Open table of contents"},
     ["j"] = {"<cmd>Neorg journal today<CR>", "Today's journal entry"},
-    ["m"] = {"<cmd>Neorg workspace meetings<CR>", "Meeting notes index" },
     ["q"] = {"<cmd>Neorg workspace quicknotes<CR>", "Quicknotes index"},
-    ["r"] = {"<cmd>Neorg workspace research<CR>", "Research notes index"}
+    ["r"] = {"<cmd>Neorg workspace research<CR>", "Research notes index"},
+    -- Notes render
+    ["m"] = {"<cmd>MarkdownPreviewToggle<CR>", "Toggle Markdown preview" },
 }
 
 -- Marks

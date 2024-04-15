@@ -106,6 +106,12 @@ then
 	alias egrep='egrep --color=always'
 fi
 
+# --- nvim/lvim ---
+if [ "$(uname -n)" == "PICARD" ] || [ "$(uname -n)" == "JANEWAY" ] || [ "$(uname -n)" == "KIRK" ]
+then
+    export PATH="$PATH:/opt/nvim-linux64/bin"
+fi
+
 
 ################
 # Prompt setup #

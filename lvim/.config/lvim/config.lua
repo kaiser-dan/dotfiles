@@ -28,10 +28,8 @@ require("user/treesitter")
 require("user/marks")
 require("user/neorg")
 require("user/noice")
--- require("user/octo")
 require("user/symbols-outline")
 require("user/todo-comments")
-require("user/usage")
 
 -- *Aesthetics*
 require("user/colors")

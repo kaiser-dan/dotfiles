@@ -1,16 +1,29 @@
 lvim.plugins = {
+    -- Core dependencies
+    "nvim-lua/plenary.nvim",
+    "stevearc/dressing.nvim",
+    {
+        "vhyrro/luarocks.nvim",
+        priority = 1000,
+        config = true,
+    },
     -- Notes
     {
         "nvim-neorg/neorg",
-        dependencies = { "nvim-lua/plenary.nvim" }
+        dependencies = { "luarocks.nvim" },
+        lazy = false,
+        version = "v7.0.0",
+        config = true,
     },
     "folke/todo-comments.nvim",
     "simrat39/symbols-outline.nvim",
     -- Git
     "kdheepak/lazygit.nvim",
-    -- "pwntester/octo.nvim",
     -- DAPs and Testing
-    "nvim-neotest/neotest",
+    {
+        "nvim-neotest/neotest",
+        dependencies = { "nvim-neotest/nvim-nio" }
+    },
     {
         "folke/trouble.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" }
@@ -45,6 +58,7 @@ lvim.plugins = {
     },
     "chentoast/marks.nvim",
     -- Aesthetics
+    "catppuccin/nvim",
     "askfiy/visual_studio_code",
     "ellisonleao/gruvbox.nvim",
     "fenetikm/falcon",
@@ -56,7 +70,12 @@ lvim.plugins = {
     "sainnhe/gruvbox-material",
     "rcarriga/nvim-notify",
     -- Miscellaneous productivity
-    "gaborvecsei/usage-tracker.nvim",
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        ft = { "markdown" },
+        build = function() vim.fn["mkdp#util#install"]() end,
+    },
     {
         "folke/noice.nvim",
         event = "VeryLazy",
@@ -79,6 +98,4 @@ lvim.plugins = {
         dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
         opts = {}
     },
-    -- Unknown
-    "stevearc/dressing.nvim",
 }
