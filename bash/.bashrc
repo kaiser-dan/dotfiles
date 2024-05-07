@@ -112,6 +112,8 @@ then
     export PATH="$PATH:/opt/nvim-linux64/bin"
 fi
 
+# --- bartib ---
+export BARTIB_FILE="/home/daniel/.log.bartib"
 
 ################
 # Prompt setup #
