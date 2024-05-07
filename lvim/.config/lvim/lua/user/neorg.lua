@@ -9,6 +9,7 @@ require("neorg").setup({
             quicknotes = "~/notes/quicknotes",
             research = "~/notes/research",
             meetings = "~/notes/meetings",
+            teaching = "~/notes/teaching",
           },
           default_workspace = "quicknotes",
         },
