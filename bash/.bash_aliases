@@ -54,7 +54,8 @@ alias hello=". ~/.hello"  # init github key, check remotes, check quotas, neofet
 alias sshinit='. ~/.ssh/ssh_init'  # activate agent, add github key
 alias syncnotes_up='rsync -zaP ~/notes/ kj_luddy_iu:~/notes/'
 alias syncnotes_down='rsync -zaP kj_luddy_iu:~/notes/ ~/notes/'
-# alias syncnotes=''
+alias synctasks_up='rsync -zaP ~/.task kj_luddy_iu:.task/; rsync -zaP ~/.local/share/timewarrior/ kj_luddy_iu:.local/share/timewarrior/'
+alias synctasks_down='rsync -zaP kj_luddy_iu:.task/ ~/.task; rsync -zaP kj_luddy_iu:.local/share/timewarrior/ ~/.local/share/timewarrior/'
 
 ######################
 # Symlink navigation #
