@@ -45,6 +45,8 @@ alias lv='lvim'
 alias lynxp='lynx -stdin'  # web browser
 alias btb='bartib'
 
+alias todo='/usr/bin/taskwarrior-tui'
+
 ##################
 # Custom utility #
 ##################
