@@ -17,6 +17,7 @@
 alias du='du -hs'
 alias scrls='screen -ls'  # list screens - can take additional patterns to match on
 alias tls='tmux ls'  # list tmux
+alias clr='clear'
 
 ####################
 # Installed utility #
@@ -32,6 +33,7 @@ alias rgi='rg -i'  # ripgrep, ignore case
 # Navigation/prompt
 alias lsd='lsd -1 --color always --group-directories-first'  # improved `ls`
 alias lsdd='lsd -l --permission octal -A --total-size'  # improved `ls`
+alias tree='lsd --tree'  # overload `tree` with icons and syntax highlighting from `lsd`
 alias prompt='starship explain'
 
 # Terminal multiplexers
