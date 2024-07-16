@@ -36,6 +36,8 @@ alias lsdd='lsd -l --permission octal -A --total-size'  # improved `ls`
 alias tree='lsd --tree'  # overload `tree` with icons and syntax highlighting from `lsd`
 alias prompt='starship explain'
 
+alias ls='lsd'  # overload 'ls' with 'lsd'
+
 # Terminal multiplexers
 alias zlj='zellij'  # terminal multiplexer
 
@@ -54,10 +56,11 @@ alias todo='/usr/bin/taskwarrior-tui'
 ##################
 alias hello=". ~/.hello"  # init github key, check remotes, check quotas, neofetch
 alias sshinit='. ~/.ssh/ssh_init'  # activate agent, add github key
+
 alias syncnotes_up='rsync -zaP ~/notes/ kj_luddy_iu:~/notes/'
 alias syncnotes_down='rsync -zaP kj_luddy_iu:~/notes/ ~/notes/'
 alias synctasks_up='rsync -zaP ~/.task/ kj_luddy_iu:.task/; rsync -zaP ~/.local/share/timewarrior/ kj_luddy_iu:.local/share/timewarrior/'
-alias synctasks_down='rsync -zaP kj_luddy_iu:.task/ ~/; rsync -zaP kj_luddy_iu:.local/share/timewarrior/ ~/.local/share/timewarrior/'
+alias synctasks_down='rsync -zaP kj_luddy_iu:.task/ ~/.task/; rsync -zaP kj_luddy_iu:.local/share/timewarrior/ ~/.local/share/timewarrior/'
 
 ######################
 # Symlink navigation #

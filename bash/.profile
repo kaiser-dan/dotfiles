@@ -41,3 +41,5 @@ case ":$PATH:" in
 esac
 
 # <<< juliaup initialize <<<
+
+[ -f "/home/daniel/.ghcup/env" ] && . "/home/daniel/.ghcup/env" # ghcup-env

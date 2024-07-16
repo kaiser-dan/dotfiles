@@ -31,7 +31,7 @@ data.location=/home/daniel/.task
 #include dark-red-256.theme
 #include dark-green-256.theme
 #include dark-blue-256.theme
-#include dark-violets-256.theme
+include dark-violets-256.theme
 #include dark-yellow-green.theme
 #include dark-gray-256.theme
 #include dark-gray-blue-256.theme
@@ -39,9 +39,20 @@ data.location=/home/daniel/.task
 #include solarized-light-256.theme
 #include no-color.theme
 
-context.work.read=+work
-context.work.write=+work
-context=work
-context.home.read=+home
-context.home.write=+home
+
+
 uda.priority.values=H,M,,L
+urgency.age.coefficient=0.0
+urgency.annotations.coefficient=0.0
+urgency.tags.coefficient = 0.0
+urgency.uda.priority.L.coefficient=0.0
+
+context.research.read=+research
+context.research.write=+research
+context.teaching.read=+teaching
+context.teaching.write=+teaching
+context.personal.read=+personal
+context.personal.write=+personal
+context=research
+context.tech.read=+tech
+context.tech.write=+tech
