@@ -30,6 +30,8 @@ alias erdd='erd --dirs-only'  # prettier alternative to `tree`
 alias lg='lazygit'  # nice Git UI
 alias rgi='rg -i'  # ripgrep, ignore case
 
+alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
+
 # Navigation/prompt
 alias lsd='lsd -1 --color always --group-directories-first'  # improved `ls`
 alias lsdd='lsd -l --permission octal -A --total-size'  # improved `ls`

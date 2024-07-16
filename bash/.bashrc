@@ -115,6 +115,9 @@ fi
 # --- man ---
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
+# --- navi ---
+eval "$(navi widget bash)"
+
 ################
 # Prompt setup #
 ################
