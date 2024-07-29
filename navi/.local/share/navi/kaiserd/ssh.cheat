@@ -1,0 +1,4 @@
+% ssh, notebook
+
+# Open SSH tunnel
+ssh <host> -N -L <port>:localhost:<port>
