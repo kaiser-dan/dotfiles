@@ -1,0 +1,8 @@
+% csv, data
+
+# Average of column V grouped by column G
+awk -F, 'NR>1 {val[$<G>] += $<V>; count[$<G>] += 1} END {for (idx in val) print idx,val[idx]/count[idx]}' <FILE> | sort -g
+
+
+# Dsitrubution of column D
+awk -F, '{val[$<D>] += 1} END {for (idx in val) print idx,val[idx]}' <FILE>

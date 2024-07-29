@@ -8,12 +8,6 @@ keymap("n", "<S-h>", ":bprev<CR>", opts)
 ---- Ranger
 lvim.builtin.which_key.mappings["E"] = { "<cmd>RnvimrToggle<CR>", "Ranger VFE" }
 
--- Python file bindings
--- lvim.builtin.which_key.mappings["C"] = {
---   name = "Python",
---   ["c"] = { "<cmd>lua require('swenv.api').pick_venv()<CR>", "Choose Env" },
--- }
-
 -- To-do comments
 lvim.builtin.which_key.mappings["t"] = {
     name = "To-Do Comments",
@@ -25,7 +19,7 @@ lvim.builtin.which_key.mappings["t"] = {
 }
 
 -- Symbols outline
-lvim.builtin.which_key.mappings["o"] = { "<cmd>SymbolsOutline<CR>" , "Symbols outline" }
+lvim.builtin.which_key.mappings["lo"] = { "<cmd>SymbolsOutline<CR>" , "Symbols outline" }
 
 -- Neorg
 lvim.builtin.which_key.mappings["n"] = {
@@ -40,10 +34,32 @@ lvim.builtin.which_key.mappings["n"] = {
 }
 
 -- Marks
-lvim.builtin.which_key.mappings["m"] = { "<cmd>MarksQFListAll<CR>" , "List marks" }
+lvim.builtin.which_key.mappings["sm"] = { 
+    "<cmd>MarksQFListAll<CR>" , "List marks"
+}
 
 -- Noice
 lvim.builtin.which_key.mappings[','] = { "<cmd>NoiceDismiss<CR>", "Dismiss notifications" }
 
 -- ToggleTerm
 -- lvim.builtin.which_key.mappings['\\'] = { "<cmd>ToggleTerm<CR>", "Terminal (toggle)" }
+
+
+-- Help pages
+lvim.builtin.which_key.mappings["H"] = {
+    name = "Help pages",
+}
+
+
+-- Removing LunarVim mappings
+lvim.builtin.which_key.mappings['p'] = { "<cmd>Mason<CR>", "Mason (plugins)" }
+
+lvim.builtin.which_key.mappings['T'] = {}
+
+lvim.builtin.which_key.mappings['f'] = {}
+
+lvim.builtin.which_key.mappings['sC'] = {}
+lvim.builtin.which_key.mappings['sp'] = {}
+lvim.builtin.which_key.mappings['sH'] = {}
+lvim.builtin.which_key.mappings['sb'] = {}
+lvim.builtin.which_key.mappings['sk'] = {}
