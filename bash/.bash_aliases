@@ -30,11 +30,15 @@ alias erdd='erd --dirs-only'  # prettier alternative to `tree`
 alias lg='lazygit'  # nice Git UI
 alias rgi='rg -i'  # ripgrep, ignore case
 
+alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
+
 # Navigation/prompt
 alias lsd='lsd -1 --color always --group-directories-first'  # improved `ls`
 alias lsdd='lsd -l --permission octal -A --total-size'  # improved `ls`
 alias tree='lsd --tree'  # overload `tree` with icons and syntax highlighting from `lsd`
 alias prompt='starship explain'
+
+alias ls='lsd'  # overload 'ls' with 'lsd'
 
 # Terminal multiplexers
 alias zlj='zellij'  # terminal multiplexer
@@ -54,6 +58,7 @@ alias todo='/usr/bin/taskwarrior-tui'
 ##################
 alias hello=". ~/.hello"  # init github key, check remotes, check quotas, neofetch
 alias sshinit='. ~/.ssh/ssh_init'  # activate agent, add github key
+
 alias syncnotes_up='rsync -zaP ~/notes/ kj_luddy_iu:~/notes/'
 alias syncnotes_down='rsync -zaP kj_luddy_iu:~/notes/ ~/notes/'
 alias synctasks_up='rsync -zaP ~/.task/ kj_luddy_iu:.task/; rsync -zaP ~/.local/share/timewarrior/ kj_luddy_iu:.local/share/timewarrior/'

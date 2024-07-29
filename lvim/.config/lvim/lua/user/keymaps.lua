@@ -6,7 +6,7 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprev<CR>", opts)
 
 ---- Ranger
-lvim.builtin.which_key.mappings["R"] = { "<cmd>RnvimrToggle<CR>", "Ranger VFE" }
+lvim.builtin.which_key.mappings["E"] = { "<cmd>RnvimrToggle<CR>", "Ranger VFE" }
 
 -- Python file bindings
 -- lvim.builtin.which_key.mappings["C"] = {

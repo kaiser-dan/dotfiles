@@ -113,7 +113,10 @@ then
 fi
 
 # --- man ---
-export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+# --- navi ---
+eval "$(navi widget bash)"
 
 ################
 # Prompt setup #
@@ -231,4 +234,27 @@ case ":$PATH:" in
 esac
 
 # <<< juliaup initialize <<<
+
+
+[ -f "/home/daniel/.ghcup/env" ] && . "/home/daniel/.ghcup/env" # ghcup-env
+. "$HOME/.cargo/env"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/daniel/.local/miniforge3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/daniel/.local/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/home/daniel/.local/miniforge3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/daniel/.local/miniforge3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
+if [ -f "/home/daniel/.local/miniforge3/etc/profile.d/mamba.sh" ]; then
+    . "/home/daniel/.local/miniforge3/etc/profile.d/mamba.sh"
+fi
+# <<< conda initialize <<<
 
