@@ -1,0 +1,4 @@
+% notebooks, jupyter
+
+# expose current conda environment to jupyter kernels
+python -m ipykernel install --user --name <name>
