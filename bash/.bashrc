@@ -115,8 +115,6 @@ fi
 # --- man ---
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-# --- navi ---
-eval "$(navi widget bash)"
 
 ################
 # Prompt setup #
@@ -258,3 +256,5 @@ if [ -f "/home/daniel/.local/miniforge3/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
+# --- navi ---
+eval "$(navi widget bash)"
