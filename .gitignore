@@ -7,7 +7,6 @@ lazy-lock.json
 # Recent logs
 vim/.vim_mru_files
 vim/.viminfo
-vim/.vim_runtime
 **/cache
 
 # Sensitive files

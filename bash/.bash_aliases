@@ -29,8 +29,7 @@ alias erd='erd -IH'  # colorized tree with human-readable size and icons
 alias erdd='erd --dirs-only'  # prettier alternative to `tree`
 alias lg='lazygit'  # nice Git UI
 alias rgi='rg -i'  # ripgrep, ignore case
-
-alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
+alias cat='bat'  # improved `cat`
 
 # Navigation/prompt
 alias lsd='lsd -1 --color always --group-directories-first'  # improved `ls`
@@ -38,7 +37,7 @@ alias lsdd='lsd -l --permission octal -A --total-size'  # improved `ls`
 alias tree='lsd --tree'  # overload `tree` with icons and syntax highlighting from `lsd`
 alias prompt='starship explain'
 
-alias ls='lsd'  # overload 'ls' with 'lsd'
+alias ls='lsd'
 
 # Terminal multiplexers
 alias zlj='zellij'  # terminal multiplexer
@@ -46,11 +45,10 @@ alias zlj='zellij'  # terminal multiplexer
 # Editors
 alias nv='nvim'
 alias lv='lvim'
+alias obsidian="~/Software/AppImages/Obsidian-1.6.7.AppImage"
 
 # Other
 alias lynxp='lynx -stdin'  # web browser
-alias btb='bartib'
-
 alias todo='/usr/bin/taskwarrior-tui'
 
 ##################
@@ -58,11 +56,10 @@ alias todo='/usr/bin/taskwarrior-tui'
 ##################
 alias hello=". ~/.hello"  # init github key, check remotes, check quotas, neofetch
 alias sshinit='. ~/.ssh/ssh_init'  # activate agent, add github key
-
 alias syncnotes_up='rsync -zaP ~/notes/ kj_luddy_iu:~/notes/'
 alias syncnotes_down='rsync -zaP kj_luddy_iu:~/notes/ ~/notes/'
 alias synctasks_up='rsync -zaP ~/.task/ kj_luddy_iu:.task/; rsync -zaP ~/.local/share/timewarrior/ kj_luddy_iu:.local/share/timewarrior/'
-alias synctasks_down='rsync -zaP kj_luddy_iu:.task/ ~/.task/; rsync -zaP kj_luddy_iu:.local/share/timewarrior/ ~/.local/share/timewarrior/'
+alias synctasks_down='rsync -zaP kj_luddy_iu:.task/ ~/; rsync -zaP kj_luddy_iu:.local/share/timewarrior/ ~/.local/share/timewarrior/'
 
 ######################
 # Symlink navigation #
@@ -78,6 +75,7 @@ alias _SNFR='cd ~/.symlinks/SNFR'
 alias __EMB='mamba activate EmbeddedNaive'
 alias __SNFR='mamba activate WindScraper'
 alias envact='source .venv/bin/activate'  # activate python venv
+alias mambda='mamba'  # save me from my typos
 
 ####################
 # Machine-specific #
@@ -93,7 +91,6 @@ fi
 if [ "$(uname -n)" == "PICARD" ] || [ "$(uname -n)" == "JANEWAY" ] || [ "$(uname -n)" == "KIRK" ]
 then
     export BROWSER=wslview
-    alias cat='bat'  # improved `cat`
     alias tmux='tmux -f ~/.config/tmux/tmux.conf'
     alias syncclock='sudo hwclock -s'  # sync WSL clock with Windows
     # alias cd='z'  # zoxide fuzzy navigator

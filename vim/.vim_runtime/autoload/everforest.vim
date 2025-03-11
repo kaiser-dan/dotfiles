@@ -14,11 +14,11 @@ function! everforest#get_configuration() "{{{
         \ 'disable_italic_comment': get(g:, 'everforest_disable_italic_comment', 0),
         \ 'enable_italic': get(g:, 'everforest_enable_italic', 0),
         \ 'cursor': get(g:, 'everforest_cursor', 'auto'),
+        \ 'menu_selection_background': get(g:, 'everforest_menu_selection_background', 'white'),
         \ 'sign_column_background': get(g:, 'everforest_sign_column_background', 'none'),
         \ 'spell_foreground': get(g:, 'everforest_spell_foreground', 'none'),
         \ 'ui_contrast': get(g:, 'everforest_ui_contrast', 'low'),
         \ 'show_eob': get(g:, 'everforest_show_eob', 1),
-        \ 'float_style': get(g:, 'everforest_float_style', 'bright'),
         \ 'current_word': get(g:, 'everforest_current_word', get(g:, 'everforest_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
         \ 'lightline_disable_bold': get(g:, 'everforest_lightline_disable_bold', 0),
         \ 'diagnostic_text_highlight': get(g:, 'everforest_diagnostic_text_highlight', 0),
@@ -201,7 +201,7 @@ function! everforest#syn_gen(path, last_modified, msg) "{{{
     echohl WarningMsg | echom '[everforest] Updated ' . rootpath . syntax_relative_path | echohl None
     call everforest#ftplugin_detect(a:path)
   else
-    " echohl WarningMsg | echom '[everforest] Generated ' . rootpath . syntax_relative_path | echohl None
+    echohl WarningMsg | echom '[everforest] Generated ' . rootpath . syntax_relative_path | echohl None
     execute 'set runtimepath+=' . fnamemodify(rootpath, ':p') . 'after'
   endif
 endfunction "}}}
@@ -278,7 +278,7 @@ function! everforest#syn_clean(path, msg) "{{{
   endif
   if a:msg
     let syntax_relative_path = has('win32') ? '\after\syntax' : '/after/syntax'
-    " echohl WarningMsg | echom '[everforest] Cleaned ' . rootpath . syntax_relative_path | echohl None
+    echohl WarningMsg | echom '[everforest] Cleaned ' . rootpath . syntax_relative_path | echohl None
   endif
 endfunction "}}}
 function! everforest#syn_exists(path) "{{{
