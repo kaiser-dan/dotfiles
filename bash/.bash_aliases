@@ -14,10 +14,14 @@
 ###################
 # Default utility #
 ###################
-alias du='du -hs'
+alias du='du -hs'  # byte units + summary view (dont recurse)
+
 alias scrls='screen -ls'  # list screens - can take additional patterns to match on
 alias tls='tmux ls'  # list tmux
-alias clr='clear'
+
+alias clr='clear'  # clear screen
+
+alias dirs='dirs -v'  # verbose dirs by default
 
 ####################
 # Installed utility #
@@ -83,8 +87,11 @@ alias mambda='mamba'  # save me from my typos
 # --- Uni machines ---
 if [ "$(uname -n)" == "sagres" ]
 then
-    alias tmux='~/Software/AppImages/tmux.appimage -f ~/.config/tmux/tmux.conf'
-    alias nvim='~/Software/AppImages/nvim.appimage'
+    alias tmux='~/Software/bin/tmux.appimage -f ~/.config/tmux/tmux.conf'
+    alias nvim='~/Software/bin/nvim.appimage'
+    alias lg='~/Software/bin/lazygit'
+    alias obsidian='~/Software/bin/obsidian'
+    alias zen='~/Software/bin/zen-x86_64.AppImage'
 fi
 
 # --- Personal machines ---
